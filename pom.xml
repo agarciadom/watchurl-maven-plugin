@@ -87,6 +87,7 @@
             <version>1.8</version>
             <configuration>
               <addTestClassPath>true</addTestClassPath>
+              <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
               <debug>true</debug>
               <goals>
                 <goal>clean</goal>

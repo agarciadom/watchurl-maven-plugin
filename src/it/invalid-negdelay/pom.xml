@@ -4,10 +4,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>es.uca.maven.it</groupId>
-  <artifactId>simple-it</artifactId>
+  <artifactId>invalid-negdelay</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-  <description>A simple IT verifying the basic use case.</description>
 
   <build>
     <plugins>
@@ -21,6 +19,7 @@
             <phase>integration-test</phase>
             <configuration>
                 <url>http://localhost:8080</url>
+                <retryDelay>-1</retryDelay>
             </configuration>
             <goals>
               <goal>wait</goal>
