@@ -4,7 +4,7 @@
 
   <groupId>es.uca.maven</groupId>
   <artifactId>watchurl-maven-plugin</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>maven-plugin</packaging>
 
   <name>URL Watcher Maven Plugin</name>
