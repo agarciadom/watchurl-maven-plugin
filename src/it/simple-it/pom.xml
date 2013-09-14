@@ -9,10 +9,6 @@
 
   <description>A simple IT verifying the basic use case.</description>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
   <build>
     <plugins>
       <plugin>
@@ -21,10 +17,13 @@
         <version>@project.version@</version>
         <executions>
           <execution>
-            <id>touch</id>
-            <phase>validate</phase>
+            <id>wait</id>
+            <phase>integration-test</phase>
+            <configuration>
+                <url>http://localhost:8080</url>
+            </configuration>
             <goals>
-              <goal>touch</goal>
+              <goal>wait</goal>
             </goals>
           </execution>
         </executions>
